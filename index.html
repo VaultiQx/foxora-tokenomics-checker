@@ -344,11 +344,6 @@
       .hero-actions .btn.mint:hover { background: var(--blue-press); }
 
       /* ---------- checker polish ---------- */
-      .checker-status {
-        display: flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--ink-3);
-        margin-bottom: 16px;
-      }
-      .checker-status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); flex: none; box-shadow: 0 0 0 3px var(--green-bg); }
       .field-label { display: block; font-size: 14px; font-weight: 600; color: var(--ink-2); margin-bottom: 8px; }
 
       /* ---------- footer ---------- */
@@ -425,7 +420,6 @@
           </p>
         </div>
         <div class="card">
-          <div class="checker-status"><span class="dot"></span>Live on Robinhood Chain &middot; Read-only, no wallet connection</div>
           <label class="field-label" for="addr-input">Wallet address</label>
           <form class="checker-form" id="check-form" novalidate>
             <input
@@ -462,7 +456,8 @@
               <div class="row"><span>Holder pool</span><b>100,000,000 FOXORA (10%)</b></div>
             </div>
             <div class="result-actions">
-              <a class="btn" href="https://t.me/foxoraxyz" target="_blank" rel="noopener">Join the community</a>
+              <button class="btn" id="claim-btn" type="button">Claim FOXORA</button>
+              <a class="btn secondary" href="https://t.me/foxoraxyz" target="_blank" rel="noopener">Join the community</a>
               <a class="btn secondary" href="https://opensea.io/collection/foxora" target="_blank" rel="noopener">View your foxes on OpenSea</a>
             </div>
           </div>
@@ -869,6 +864,8 @@
 
         function hideResults() {
           [resHolder, resNone, resError].forEach(function (el) { el.classList.remove("show"); });
+          var cb = document.getElementById("claim-btn");
+          if (cb) { cb.textContent = "Claim FOXORA"; cb.disabled = false; }
         }
         function setBusy(on) {
           busy = on;
@@ -996,6 +993,11 @@
         });
         document.getElementById("retry-btn").addEventListener("click", function () {
           if (!busy && lastAddr) check(lastAddr);
+        });
+        var claimBtn = document.getElementById("claim-btn");
+        claimBtn.addEventListener("click", function () {
+          claimBtn.textContent = "Soon";
+          claimBtn.disabled = true;
         });
       })();
     </script>
