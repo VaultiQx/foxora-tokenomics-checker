@@ -408,7 +408,7 @@
       <div class="hero">
         <h1>The Foxora token.<br /><span class="gold">10% belongs to holders.</span></h1>
         <p class="lede">
-          1,000,000,000 FOXORA. 100,000,000 reserved for the 2,222 foxes,
+          1,000,000,000 FXO. 100,000,000 reserved for the 2,222 foxes,
           split evenly. Hold a fox, own a share.
         </p>
         <div class="hero-actions">
@@ -455,15 +455,15 @@
               <h3>You are a holder</h3>
             </div>
             <p class="result-sub">This wallet holds Foxora, so its token allocation is unlocked.<br /><span class="mono" id="holder-addr"></span></p>
-            <div class="alloc-big"><span id="alloc-count">0</span> <small>FOXORA</small></div>
+            <div class="alloc-big"><span id="alloc-count">0</span> <small>FXO</small></div>
             <div class="alloc-rows">
               <div class="row"><span>Foxes in this wallet</span><b id="row-foxes">–</b></div>
-              <div class="row"><span>Rate per fox</span><b>45,005 FOXORA</b></div>
+              <div class="row"><span>Rate per fox</span><b>45,005 FXO</b></div>
               <div class="row"><span>Your share of the holder pool</span><b id="row-share">–</b></div>
-              <div class="row"><span>Holder pool</span><b>100,000,000 FOXORA (10%)</b></div>
+              <div class="row"><span>Holder pool</span><b>100,000,000 FXO (10%)</b></div>
             </div>
             <div class="result-actions">
-              <button class="btn" id="claim-btn" type="button">Claim FOXORA</button>
+              <button class="btn" id="claim-btn" type="button">Claim FXO</button>
               <a class="btn secondary" href="https://t.me/foxoraxyz" target="_blank" rel="noopener">Join the community</a>
               <a class="btn secondary" href="https://opensea.io/collection/foxora" target="_blank" rel="noopener"><img class="os-logo" src="assets/opensea-logo.png" alt="OpenSea" />View your foxes on OpenSea</a>
             </div>
@@ -528,9 +528,9 @@
         </div>
 
         <div class="stats">
-          <div class="stat"><b>1,000,000,000</b><span>Total supply (FOXORA)</span></div>
+          <div class="stat"><b>1,000,000,000</b><span>Total supply (FXO)</span></div>
           <div class="stat"><b>100,000,000</b><span>Reserved for holders (10%)</span></div>
-          <div class="stat"><b>45,005</b><span>FOXORA per fox</span></div>
+          <div class="stat"><b>45,005</b><span>FXO per fox</span></div>
           <div class="stat"><b>2,222</b><span>Foxes, all minted</span></div>
         </div>
       </section>
@@ -539,12 +539,12 @@
       <section class="block" id="tokenomics">
         <div class="sec-head">
           <h2>Tokenomics</h2>
-          <p>A fixed supply of 1,000,000,000 FOXORA. No more can be created. Tap any slice to see what it is for.</p>
+          <p>A fixed supply of 1,000,000,000 FXO. No more can be created. Tap any slice to see what it is for.</p>
         </div>
         <div class="card">
           <div class="tok-grid">
             <div class="donut-box">
-              <svg id="donut" viewBox="0 0 200 200" role="img" aria-label="FOXORA supply distribution chart"></svg>
+              <svg id="donut" viewBox="0 0 200 200" role="img" aria-label="FXO supply distribution chart"></svg>
               <div class="donut-center">
                 <b id="dc-pct">10%</b>
                 <span id="dc-label">Holder Airdrop</span>
@@ -554,7 +554,7 @@
               <div class="legend" id="legend" role="list"></div>
               <p class="tok-note" id="tok-desc">
                 Reserved for Foxora NFT holders. Every fox earns the same share of this
-                pool, so a wallet with more foxes receives more FOXORA.
+                pool, so a wallet with more foxes receives more FXO.
               </p>
             </div>
           </div>
@@ -586,7 +586,7 @@
           </details>
           <details>
             <summary>How many tokens does one fox get?<span class="chev" aria-hidden="true">+</span></summary>
-            <div class="faq-body"><p>45,005 FOXORA per fox. The holder pool of 100,000,000 FOXORA is split evenly across the 2,222 foxes, and every extra fox in the same wallet adds 45,005 FOXORA again.</p></div>
+            <div class="faq-body"><p>45,005 FXO per fox. The holder pool of 100,000,000 FXO is split evenly across the 2,222 foxes, and every extra fox in the same wallet adds 45,005 FXO again.</p></div>
           </details>
           <details>
             <summary>When can I claim?<span class="chev" aria-hidden="true">+</span></summary>
@@ -612,7 +612,7 @@
           </div>
           <p class="foot-note">
             Contract 0x1b9b8a7f5caed351548b82016099660dad28e718 (chain 4663).
-            FOXORA figures are the announced allocation plan; the airdrop is paid at token launch.
+            FXO figures are the announced allocation plan; the airdrop is paid at token launch.
           </p>
         </div>
       </footer>
@@ -627,10 +627,10 @@
         var SLICES = [
           { name: "Holder Airdrop", pct: 10, color: "#0a9e4f",
             note: "For the 2,222 foxes",
-            desc: "Reserved for Foxora NFT holders. Every fox earns the same share of this pool, so a wallet with more foxes receives more FOXORA." },
+            desc: "Reserved for Foxora NFT holders. Every fox earns the same share of this pool, so a wallet with more foxes receives more FXO." },
           { name: "Liquidity", pct: 20, color: "#7ac74f",
             note: "Trading pools at launch",
-            desc: "Seeds the trading pools when FOXORA launches, so holders can buy and sell from day one." },
+            desc: "Seeds the trading pools when FXO launches, so holders can buy and sell from day one." },
           { name: "Ecosystem & Treasury", pct: 30, color: "#0f766e",
             note: "Future drops, rewards, growth",
             desc: "Funds what comes next: future drops, holder rewards, partnerships, and the long-term growth of the Foxora universe." },
@@ -872,7 +872,7 @@
         function hideResults() {
           [resHolder, resNone, resError].forEach(function (el) { el.classList.remove("show"); });
           var cb = document.getElementById("claim-btn");
-          if (cb) { cb.textContent = "Claim FOXORA"; cb.disabled = false; }
+          if (cb) { cb.textContent = "Claim FXO"; cb.disabled = false; }
         }
         function setBusy(on) {
           busy = on;
